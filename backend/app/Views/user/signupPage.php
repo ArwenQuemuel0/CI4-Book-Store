@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Achlys Bookstore – Login</title>
+  <title>Achlys Bookstore – Sign Up</title>
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,11 +31,16 @@
       </div>
     </header>
 
-    <!-- Login Form -->
+    <!-- Sign Up Form -->
     <main class="flex-grow flex items-center justify-center px-4">
       <div class="bg-white bg-opacity-80 rounded-xl shadow-lg p-8 w-full max-w-md">
-        <h2 class="text-3xl font-bold text-center mb-6 text-gray-900">Login to Your Account</h2>
+        <h2 class="text-3xl font-bold text-center mb-6 text-gray-900">Create an Account</h2>
         <form action="#" method="post" class="space-y-6">
+          <div>
+            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8B7E74]" />
+          </div>
           <div>
             <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
             <input type="email" id="email" name="email" required
@@ -46,15 +51,19 @@
             <input type="password" id="password" name="password" required
               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8B7E74]" />
           </div>
-          <!-- Fixed Button -->
+          <div>
+            <label for="confirm" class="block text-gray-700 font-medium mb-2">Confirm Password</label>
+            <input type="password" id="confirm" name="confirm" required
+              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8B7E74]" />
+          </div>
           <button type="submit"
             class="w-full inline-block text-lg font-semibold px-6 py-3 rounded-full bg-gray-200 text-gray-800 shadow hover:bg-gray-300 transition duration-200">
-            Login
+            Sign Up
           </button>
         </form>
         <p class="text-center text-gray-700 mt-6">
-          Don’t have an account?
-          <a href="/signupPage" class="underline text-gray-800 hover:text-gray-900">Sign up</a>
+          Already have an account?
+          <a href="/loginPage" class="underline text-gray-800 hover:text-gray-900">Log in</a>
         </p>
       </div>
     </main>
