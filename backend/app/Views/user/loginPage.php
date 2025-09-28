@@ -19,9 +19,6 @@
     .overlay { background-color: rgba(255, 255, 255, 0.55); }
     .custom-neutral { background-color: #8B7E74; }
     .header-title { font-family: 'Titan One', cursive; }
-    .btn-main {
-      @apply inline-block bg-gray-200 text-gray-800 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-300 transition;
-    }
   </style>
 </head>
 <body class="text-gray-100">
@@ -31,8 +28,6 @@
     <header class="custom-neutral shadow text-gray-100 sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <h1 class="header-title text-3xl md:text-4xl tracking-wider">Achlys Bookstore</h1>
-        <nav class="flex space-x-6">
-        </nav>
       </div>
     </header>
 
@@ -51,8 +46,9 @@
             <input type="password" id="password" name="password" required
               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8B7E74]" />
           </div>
+          <!-- Fixed Button -->
           <button type="submit"
-            class="btn-main w-full text-lg bg-gray-200 hover:bg-gray-300">
+            class="w-full inline-block text-lg font-semibold px-6 py-3 rounded-full bg-gray-200 text-gray-800 shadow hover:bg-gray-300 transition duration-200">
             Login
           </button>
         </form>
