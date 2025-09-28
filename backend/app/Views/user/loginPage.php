@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Achlys Bookstore – Login</title>
+  <title>Achlys' Bookstore – Login</title>
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
